@@ -20,7 +20,7 @@ def transform(df,mes_2023):
     df = df[~df['LONGITUDE'].isna()]
 
     # Mes
-    df = df[(df['MÊS_ESTÁTISTICA']==mes_2023)]
+    df = df[(df['MÊS_ESTÁTISTICA'].isin(mes_2023))]
     
     return df
 

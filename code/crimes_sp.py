@@ -21,7 +21,7 @@ def run_crime():
 
     # Transform
     print('Transforming data...')
-    df = transform(df,5)
+    df = transform(df,[4,5])
     df = convert_geodataframe(df,'LONGITUDE','LATITUDE')
 
     # Plot
